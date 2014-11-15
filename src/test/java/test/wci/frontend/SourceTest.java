@@ -1,7 +1,8 @@
-package wci.frontend;
+package test.wci.frontend;
 
 import org.junit.Before;
 import org.junit.Test;
+import wci.frontend.Source;
 
 import java.io.BufferedReader;
 import java.io.IOException;

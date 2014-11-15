@@ -9,7 +9,7 @@ public class Source implements MessageProducer {
     public static final char EOL = '\n';
     public static final char EOF = (char) 0;
 
-    protected static MessageHandler messageHandler = null;
+    protected static MessageHandler messageHandler = new MessageHandler();
 
     private BufferedReader reader;
     private String line;

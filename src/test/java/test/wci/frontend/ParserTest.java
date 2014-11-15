@@ -1,4 +1,4 @@
-package wci.frontend;
+package test.wci.frontend;
 
 import org.junit.Before;
 

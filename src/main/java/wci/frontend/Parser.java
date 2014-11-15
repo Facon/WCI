@@ -9,13 +9,17 @@ import wci.message.MessageProducer;
 
 public abstract class Parser implements MessageProducer {
     protected static SymTab symTab = null;
-    protected static MessageHandler messageHandler = null;
+    protected static MessageHandler messageHandler = new MessageHandler();
 
     protected Scanner scanner;
     protected ICode iCode = null;
 
     protected Parser(Scanner scanner) {
         this.scanner = scanner;
+    }
+
+    public SymTab getSymTab() {
+        return symTab;
     }
 
     public abstract void parse() throws Exception;
@@ -40,5 +44,9 @@ public abstract class Parser implements MessageProducer {
 
     public void sendMessage(Message message) {
         messageHandler.sendMessage(message);
+    }
+
+    public ICode getICode() {
+        return iCode;
     }
 }
