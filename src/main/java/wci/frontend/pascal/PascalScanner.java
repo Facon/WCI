@@ -26,4 +26,8 @@ public class PascalScanner extends Scanner {
 
         return token;
     }
+
+    private void skipWhiteSpace() {
+        //TODO
+    }
 }

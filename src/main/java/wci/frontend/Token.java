@@ -38,4 +38,20 @@ public class Token {
     public Number getLineNumber() {
         return source.getLineNum();
     }
+
+    public TokenType getType() {
+        return type;
+    }
+
+    public Object getPosition() {
+        return position;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public Object getValue() {
+        return value;
+    }
 }
